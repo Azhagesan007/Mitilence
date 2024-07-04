@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../static/assets/css/style.css">
+    <title>MIT</title>
+</head>
+<body>
+    <div class="main">
+        <div class="nav-main">
+            <div class="left">
+                <img src="../static/assets/img/main/MVIT-logo_news.png" alt="">
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="https://mvit.edu.in/">ABOUT US</a></li>
+                    <li><a href="">CONTACT US</a></li>
+                </ul>
+                <div class="hamburger">
+                    <p><i class="fa-solid fa-bars fa-2x"></i></p>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="main-cont">
+                <h1>MITRONCE</h1>
+                <p>"Welcome to MVIT! Get ready to ignite your passions, connect with like-minded peers, and dive into unforgettable experiences at our upcoming event. Join us as we embark on a journey of growth, learning, and endless possibilities!"</p>
+                <button onclick="location.href='{{ url_for("event") }}';">Explore</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        const ham=document.querySelector('.hamburger p');
+        const nav=document.querySelector('ul');
+
+        ham.addEventListener('click',()=>{
+            nav.classList.toggle('slide');
+        });
+    </script>
+</body>
+</html>

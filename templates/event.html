@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/assets/css/home/event.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="event">
+        <h1>Welcome to Mitronce</h1>
+        <div class="event-welcome">
+            <p>"Step into a realm of innovation and creativity at our college event on March 16, 2024! Whether you're a tech whiz or a creative genius, there's something for everyone in our dynamic mix of technical and non-technical competitions. Unleash your potential, compete fiercely, and stand a chance to claim thrilling cash rewards. Join us for a day where imagination knows no bounds, and excellence is celebrated in every endeavor!"</p>
+        </div>
+        <div class="event-main">
+            <div class="ntech">
+                <img src="../static/assets/img/main/marvin-meyer-SYTO3xs06fU-unsplash.jpg" alt="">
+                <h3>Technical Event</h3>
+                <button class="btn2" onclick="location.href='{{ url_for('tech') }}';">See info<i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div class="ntech">
+                <img src="../static/assets/img/main/unnamed.jpg" alt="">
+                <h3>Non-Technical Event</h3>
+                <button class="btn2" onclick="location.href='{{ url_for('nontech') }}'">See info<i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+        <div class="page">
+            <img src="../static/assets/img/main/IMG-20240307-WA0002.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>

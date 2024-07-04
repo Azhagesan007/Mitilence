@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    background: url('/static/assets/img/main/Designer (20).png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.event{
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.event-welcome{
+    margin: 50px;
+    text-align: center;
+    width: 800px;
+}
+.event-welcome p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    font-size: 19px;
+}
+.event h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.event-main{
+    display: flex;
+    gap: 100px;
+}
+.ntech{
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    align-items: center;
+    /* background: linear-gradient(108.3deg, rgb(202, 73, 118) 15.2%, rgb(255, 84, 84) 99.3%); */
+}
+.ntech img{
+    margin-bottom: 10px;
+    height: 200px;
+    width: 250px;
+}
+.ntech button{
+    padding: 10px 12px;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: 1px solid #dcdc;
+    /* background: linear-gradient(108.3deg, rgb(202, 73, 118) 15.2%, rgb(255, 84, 84) 99.3%); */
+}
+.ntech h3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+i{
+    margin-left: 5px;
+}
+.btn2:hover i{
+    margin-left: 10px;
+}
+@media (max-width:800px) {
+    .event-welcome{
+        margin: 50px;
+        text-align: center;
+        width: 600px;
+    }
+    .event-welcome p{
+        font-size: 15px;
+    }
+    .event-main{
+        gap: 50px;
+    }
+    .ntech img{
+        margin-bottom: 10px;
+        height: 150px;
+        width: 150px;
+    }
+}
+.page{
+    margin-top: 50px;
+}
+.page img{
+    width: 500px;
+    height: 400px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+@media (max-width:617px) {
+    .event-main{
+        display: flex;
+        flex-direction: column;
+    }
+    .ntech img{
+        margin-bottom: 10px;
+        height: 200px;
+        width: 250px;
+    }
+    .event-welcome{
+        margin: 50px;
+        text-align: center;
+        width: 400px;
+    }
+}

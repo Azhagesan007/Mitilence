@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url('/static/assets/img/main/wp1839588-stranger-things-wallpapers.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.paper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.paper img{
+    margin-top: 20px;
+    height: 200px;
+    width: 300px;
+}
+.paper-main{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.paper-cont{
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+}
+.paper-cont p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 22px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.paper-cont button{
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #dcdcdc;
+}
+.paper-rules{
+    width: 100%;
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+}
+.rules{
+    /* background-color: antiquewhite; */
+    background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    width: 450px;
+}
+.coordinator{
+    /* width: 550px; */
+    width: 50%;
+    display: flex;
+    margin-bottom: 50px;
+    align-items: center;
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.1 );
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+}
+.coordinator h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+}
+.member{
+    margin: 10px;
+}
+.member h3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.member span{
+    font-family: monospace;
+    font-size: 15px;
+}
+.rules h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.rules li{
+    margin-top: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+@media (max-width:1155px) {
+    .rules li{
+        font-size: 15px;
+    }
+    .rules{
+        width: 400px;
+    }
+}
+@media (max-width:1047px) {
+    .rules li{
+        font-size: 15px;
+    }
+    .rules{
+        width: 350px;
+    }
+}
+@media (max-width:897px) {
+    .rules li{
+        font-size: 15px;
+    }
+    .rules{
+        width: 300px;
+    }
+}
+@media (max-width:770px) {
+    .rules li{
+        font-size: 15px;
+    }
+    .rules{
+        width: 280px;
+    }
+}
+@media (max-width:730px) {
+    .rules li{
+        font-size: 15px;
+    }
+    .paper-rules{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .rules{
+        width: 500px;
+        margin-bottom: 50px;
+    }
+    .coordinator{
+        width: 500px;
+    }
+}
+@media (max-width:550px) {
+    .rules li{
+        font-size: 15px;
+    }
+    .rules{
+        width: 420px;
+    }
+    .coordinator{
+        width: 420px;
+    }
+}

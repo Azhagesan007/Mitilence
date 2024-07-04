@@ -1,0 +1,192 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.main{
+    height: 100vh;
+    width: 100%;
+    background: url('/static/assets/img/main/wallpaperflare.com_wallpaper.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: unset;
+}
+.nav-main{
+    width: 100%;
+    display: flex;
+    /* background-color: aliceblue; */
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 45px;
+    /* padding: 20px; */
+}
+.left img{
+    height: 60px;
+}
+.content h1{
+    color: aliceblue;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.right{
+    display: flex;
+    /* line-height: 10px; */
+}
+.hamburger{
+    display: none;
+}
+.right ul{
+    display: flex;
+    position: relative;
+    gap: 10px;
+}
+.right a{
+    margin-right: 10px;
+    font-weight: 600;
+    font-size: larger;
+    text-decoration: none;
+    color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.content{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    height: 65vh;
+    flex-direction: column;
+    justify-content: center;
+}
+.main-cont{
+    justify-content: center;
+    text-align: center;
+    width: 810px;
+}
+.main-cont p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: white;
+    gap: 1000px;
+}
+.main-cont button{
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    font-size: larger;
+    background-color: black;
+    color: rgb(211, 37, 37);
+}
+@media (max-width:825px) {
+    .right ul{
+        position: fixed;
+        z-index: 100000;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        overflow-x: hidden;
+        height: 30vh;
+        left: 100%;
+        top: 110px;
+        align-items: center;
+        justify-self: center;
+        background-color: aliceblue;
+        background: rgba( 255, 255, 255, 0.25 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 4px );
+        -webkit-backdrop-filter: blur( 4px );
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        transition: 1.5s;
+    }
+    .right a{
+        color: rgb(7, 7, 7);
+        position: static;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        top: 50px;
+    }
+    .main-cont{
+        justify-content: center;
+        text-align: center;
+        width: 750px;
+    }
+    .right a:hover{
+        border-bottom: 3px solid #bf0888;
+    }
+    .right ul.slide{
+        transition: 1s;
+        left: 50%;
+    }
+    .hamburger{
+        float: right;
+        display: flex;
+    }
+    .hamburger p{
+        position: absolute;
+        cursor: pointer;
+    }
+    .main-cont p{
+        font-weight: 800;
+        font-size: 20px;       
+    }
+    .nav-main{
+        width: 100%;
+        display: flex;
+        /* background-color: aliceblue; */
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 45px;
+        /* padding: 20px; */
+    }
+}
+@media (max-width:750px) {
+    .main-cont{
+        justify-content: center;
+        text-align: center;
+        width: 600px;
+    }
+}
+@media (max-width:750px) {
+    .main-cont{
+        justify-content: center;
+        text-align: center;
+        width: 490px;
+    }
+    .nav-main{
+        width: 100%;
+        display: flex;
+        /* background-color: aliceblue; */
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 30px;
+        padding-right: 50xpx;
+        /* padding: 20px; */
+    }
+    .hamburger p{
+        top: 55px;
+    }
+    .right ul{
+        width: 50%;
+    }
+}
+@media (max-width:470px) {
+    .main-cont{
+        justify-content: center;
+        text-align: center;
+        width: 400px;
+    }
+    .main-cont p{
+        font-weight: 800;
+        font-size: 18px;       
+    }
+}

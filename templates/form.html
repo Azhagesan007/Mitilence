@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>form - Mitronce</title>
+    <link rel="stylesheet" href="../static/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../static/assets/css/styles.min.css">
+</head>
+
+<body class="bg-gradient-primary">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-9 col-lg-12 col-xl-10">
+                <div class="card shadow-lg o-hidden border-0 my-5">
+                    <div class="card-body p-0">
+                        <div class="row">
+
+                            <div class="col-lg-6">
+                                <div class="p-5">
+                                    <div class="text-center">
+                                        <h4 class="text-dark mb-4"><strong>Register Now! for the MITRONCE 2024</strong></h4>
+                                    </div>
+                                    <form name="payment" class="user" method="post" action="{{ url_for('registration') }}" enctype="multipart/form-data">
+                                        <div class="mb-3"><input class="form-control form-control-user" type="text" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Your Name..." name="name" required></div>
+                                        <div class="mb-3"><input class="form-control form-control-user" type="number" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Your mobile no..." name="mobile" required></div>
+                                        <div class="mb-3"><input class="form-control form-control-user" type="text" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Your college..." name="college" required></div>
+                                        <div class="mb-3"><input class="form-control form-control-user" type="text" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Your department..." name="department" required></div>
+                                        <div class="mb-3"><input class="form-control form-control-user" type="email" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address..." name="email" required></div>
+                                        <div class="mb-3"><label for="id_card">Upload Your College ID Card</label><input class="form-control form-control-user" type="file" id="id_card" aria-describedby="emailHelp" placeholder="Upload Your ID card" name="id_card" required></div>
+                                        <div class="mb-3"><input type="radio" id="Cash" name="payment" value="Cash" required><label for="Cash">Cash</label><br><input type="radio" id="Online" name="payment" value="Prepaid" required><label for="Online">Online</label></div>
+                                        <div class="mb-3" id="qrUploadDiv" style="display: None"><label for="paymentFile">Make the payment by scanning the qr in this page or sent the payment to this number: 9629895780 and <strong>Upload the payment screenshot</strong></label><input class="form-control form-control-user" type="file" id="paymentFile" aria-describedby="emailHelp" placeholder="Upload Your Screenshot" name="paymentFile" required></div>
+                                        <div class="mb-3">
+
+                                        </div><button class="btn btn-primary d-block btn-user w-100" type="submit">Register</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-lg-6" style="padding-top: 20%; padding-right: 10%">
+                                <div class="flex-grow-1 bg-login-image"><img id="paymentImages" style="width: 120%; height: 100%" src="../static/assets/img/dogs/register.jpg"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../static/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../static/assets/js/script.min.js"></script>
+    <script>
+
+        function changeImage() {
+            var radioOnline = document.getElementById('Online');
+            var loginImage = document.getElementById('paymentImages');
+            var qrUploadDiv = document.getElementById('qrUploadDiv');
+            var paymentFileInput = document.getElementById('paymentFile')
+            if (radioOnline.checked) {
+
+                loginImage.src = '../static/assets/img/dogs/payment.png';
+                qrUploadDiv.style.display = 'block';
+                paymentFileInput.setAttribute('required', 'required');
+            } else {
+
+                loginImage.src = '../static/assets/img/dogs/register.jpg';
+                qrUploadDiv.style.display = 'none';
+                paymentFileInput.removeAttribute('required');
+
+            }
+        }
+
+        // Attach change event listener to radio buttons
+        var radioButtons = document.payment.payment;
+        radioButtons.forEach(function(radioButton) {
+            radioButton.addEventListener('change', changeImage);
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/assets/css/home/tech.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="tech">
+        <h2>Technical Events</h2>
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="../static/assets/img/main/paper.jpg" alt="">
+                <span>Paper Presentation</span>
+                <button onclick="location.href='{{ url_for("paper") }}';">About</button>
+            </div>
+            <div class="grid-item">
+                <img src="../static/assets/img/main/line.jpeg" alt="">
+                <span>Line Follower</span>
+                <button onclick="location.href='{{ url_for("linefollower") }}';">About</button>
+            </div>
+            <div class="grid-item">
+                <img src="../static/assets/img/main/finder.jpg" alt="">
+                <span>UNO-Tech Finder</span>
+                <button onclick="location.href='{{ url_for("uno") }}';">About</button>
+            </div>
+            <div class="grid-item">
+                <img src="../static/assets/img/main/debug.jpg" alt="">
+                <span>E-Circuit Debugger</span>
+                <button onclick="location.href='{{ url_for("deg") }}';">About</button>
+            </div>
+            <div class="grid-item">
+                <img src="../static/assets/img/main/techquiz.jpg" alt="">
+                <span>Technical Quiz</span>
+                <button onclick="location.href='{{ url_for("quiz") }}';">About</button>
+            </div>
+            <div class="grid-item">
+                <img src="../static/assets/img/main/py.png" alt="">
+                <span>Code clash in python</span>
+                <button onclick="location.href='{{ url_for("py") }}';">About</button>
+            </div>
+          </div>
+    </div>
+    
+</body>
+</html>
